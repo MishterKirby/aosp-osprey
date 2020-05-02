@@ -51,5 +51,12 @@ jobs:
         cd ..
     - name: Build
       run: |
-        
-
+       source build/envsetup.sh
+       lunch osprey
+       breakfast osprey
+   - name: Upload
+      uses: actions/upload-artifact@master
+      with:
+        name: kk.zip
+        path: /home/runner/work/b2g/B2G/out/target/product/osprey/fota/fullimg/update.zip
+ 	
