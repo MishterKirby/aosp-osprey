@@ -28,5 +28,5 @@ jobs:
     - name: Build
       run: pip3 install pmbootstrap
     - name:eee
-      run: yes motorola osprey | pmbootstrap init 
+      run: "yes motorola osprey | pmbootstrap init"
 
