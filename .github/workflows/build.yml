@@ -47,7 +47,10 @@ jobs:
         mv android_device_motorola_osprey motorola/osprey
         cd ..
         cd kernel/
-        
+        mkdir motorola/
+        git clone https://github.com/MishterKirby/android_kernel_motorola_msm8916.git
+        mv android_kernel_motorola_msm8916 motorola/osprey
+        cd ..
         
     - name: Build
       run: |
