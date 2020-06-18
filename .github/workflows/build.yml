@@ -34,12 +34,12 @@ jobs:
 	git config --global user.name "Sebastian Rivera"
 	git config --global user.email "ilovepikachu170@gmail.com"
 	repo init -u https://android.googlesource.com/platform/manifest -b  android-2.3.7_r1 --partial-clone
-    repo sync -qc
-    cd vendor && git clone https://github.com/MishterKirby/android_vendor_motorola_osprey
-    cd ..
-    mkdir motorola
-    mv android_vendor_motorola_osprey motorola/osprey
-
+	repo sync -qc
+	cd vendor && git clone https://github.com/MishterKirby/android_vendor_motorola_osprey
+	cd ..
+	mkdir motorola
+	mv android_vendor_motorola_osprey motorola/osprey
+	
     - name: Build
       run: 
 
