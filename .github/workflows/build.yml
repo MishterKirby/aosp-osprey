@@ -31,16 +31,19 @@ jobs:
         git config --global user.email "ilovepikachu170@gmail.com"
         ~/bin/repo init -u https://android.googlesource.com/platform/manifest -b  android-2.3.7_r1 --partial-clone
         ~/bin/repo sync -qc
+        mandir vendor
         cd vendor
         git clone https://github.com/MishterKirby/android_vendor_motorola_osprey -b cm12.1
         mkdir -p motorola
         mv android_vendor_motorola_osprey motorola/osprey
         cd ..
+        mkdir device
         cd device/
         git clone https://github.com/MishterKirby/android_device_motorola_osprey -b cm12.1
         mkdir -p motorola
         mv android_device_motorola_osprey motorola/osprey
         cd ..
+        mandir kernel
         cd kernel/
         mkdir motorola/
         git clone https://github.com/MishterKirby/android_kernel_motorola_msm8916.git
