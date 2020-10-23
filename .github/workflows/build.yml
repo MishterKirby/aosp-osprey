@@ -38,7 +38,7 @@ jobs:
         mv android_vendor_motorola_osprey motorola/osprey
         cd ..
         cd device/
-        git clone https://github.com/MishterKirby/android_device_motorola_osprey -b cm12.1
+        git clone https://github.com/MishterKirby/android_device_motorola_osprey -b cm-12.1
         mkdir -p motorola
         mv android_device_motorola_osprey motorola/osprey
         cd ..
